@@ -20,17 +20,17 @@ header.innerHTML += `
             <ul class="submenu">
             <li class="submenu-item menu-dropdown-2">
                   <a href='../sanpham.html' class="submenu-link d-flex justify-content-between" >
-                Thang máy chở khách </a>
+                Thang máy chở khách</a>
                   <ul class="submenu-2">
                   <li class="submenu-item-2 menu-dropdown-3">  
-   <a href="" class="submenu-link-3">Thang máy chở khách tiêu chuẩn </a>
-   <ul class="submenu-3">
-      <li class="submenu-item-3"><a href="../chitietsp.html" class="submenu-link-3">Thiết kế Buồng Thang</a></li>
-      <li class="submenu-item-3"><a href="#" class="submenu-link-3">Tính năng</a></li>
-      <li class="submenu-item-3"><a href="#" class="submenu-link-3">Thông số kĩ thuật</a></li>
-      <li class="submenu-item-3"><a href="#" class="submenu-link-3">Khả năng Kết Nối</a></li>
-   </ul>
-</li>
+                     <a href="" class="submenu-link-3">Thang máy chở khách tiêu chuẩn </a>
+                     <ul class="submenu-3">
+                        <li class="submenu-item-3"><a href="../chitietsp.html" class="submenu-link-3">Thiết kế Buồng Thang</a></li>
+                        <li class="submenu-item-3"><a href="#" class="submenu-link-3">Tính năng</a></li>
+                        <li class="submenu-item-3"><a href="#" class="submenu-link-3">Thông số kĩ thuật</a></li>
+                        <li class="submenu-item-3"><a href="#" class="submenu-link-3">Khả năng Kết Nối</a></li>
+                     </ul>
+                  </li>
 
 
                   <li class="submenu-item-2"><a href="#" class="submenu-link-2">Thang máy chở khách cao cấp</a></li>

@@ -115,7 +115,7 @@ img, video {
   max-height: 440px;
 }
 
-.header {
+.header, .header-mobile {
   position: fixed;
   top: 0;
   left: 0;
@@ -141,7 +141,8 @@ img, video {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 75%;
+    width: 70%;
+    min-width: 280px;
     height: 100%;
     z-index: 10;
     opacity: 0;
@@ -167,6 +168,7 @@ img, video {
   position: relative;
   display: inline-block;
   margin-left: 1.5rem;
+  line-height: 1.8rem;
 }
 .menu-link {
   display: flex;
@@ -211,6 +213,7 @@ img, video {
     width: 100%;
     height: auto;
     padding: 1rem 0;
+    display: block;
  }
   .menu-item {
     display: block;
@@ -697,14 +700,24 @@ img, video {
   margin-left: 5px;
 }
 .doitac{
+  flex-direction: row;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
 }
 .item-doi-tac{
   width: 20%;
   padding: 3rem;
 }
+
+.item-doi-tac1{
+  
+}
+.slick-dots{
+  bottom: -36px;
+}
+
 .footer{
   background: linear-gradient(to right, #2B7C76 , #358E88 , #05180E   );
 }
@@ -813,6 +826,7 @@ img, video {
 .btn-bam-de-xem span{
   padding-left: 5px;
 }
+
 .content-tinhnang p{
   width: 50%;
   line-height: 1.2rem;
@@ -1209,7 +1223,7 @@ input[type="file"] {
 }
 
 .title-small{
-  opacity: 0.2;
+  opacity: 0.6;
 }
 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
   max-width: 1200px;
@@ -1220,7 +1234,7 @@ input[type="file"] {
 }
 .content-doingu p{
   font-size: 12px;
-  max-width: 40%;
+  max-width: 44%;
 }
 .text-btn-lienhe{
   top:32%;
@@ -1401,6 +1415,9 @@ swiper-slide img {
   line-height: 1rem;
 }
 @media(max-width : 1650px){
+  .header-mobile{
+    display: none;
+  }
   .title-small{
     font-size: 62px;
   }
@@ -1410,6 +1427,17 @@ swiper-slide img {
   .hei-lap{
     height: 410px;
   }
+  .slide-doitac{
+    position: absolute;
+    display: flex;
+    top: 8%;
+    right: 16%;
+    width: 280px;
+    height: 438px;
+  }
+  .slide-doitac .item-doi-tac1{
+    width: 280px !important;
+  }
 }
 @media(max-width : 1300px){
   .title-small{
@@ -1418,16 +1446,39 @@ swiper-slide img {
   .img-itek{
     padding-top: 10%;
   }
+  .header-mobile{
+    display: none;
+  }
+  .slide-doitac{
+    position: absolute;
+    display: flex;
+    top: 8%;
+    right: 17%;
+    width: 218px;
+    height: 342px;
+  }
+  .slide-doitac .item-doi-tac1{
+    width: 220px !important;
+  }
 }
 @media(max-width : 768px){
-.header{
-  display: none;
-}
   .btn-phone-green{
     display: flex;
     justify-content: center;
     position: relative !important;
   } 
+  .slide-doitac{
+    position: absolute;
+    display: flex;
+    top: 8%;
+    right: 17%;
+    width: 148px;
+    height: 210px;
+  }
+  .slide-doitac .item-doi-tac1{
+    width: 148px !important;
+  }
+
   .white{
     height: 10px;
   }
@@ -1576,7 +1627,12 @@ swiper-slide img {
   }
   .section5{
     background: url('./img/bg-section-5-mobile.png');
+    height: 1100px;
   }
+  .fs-60{
+    font-size: 28px;
+  }
+
   .main-itek{
     margin-top: 0%;
     padding-left: 12px !important;

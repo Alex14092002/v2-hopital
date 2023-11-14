@@ -1,9 +1,19 @@
-const doitac = document.querySelector('#doitac')
+const doitac = document.querySelector('#doitac');
 doitac.innerHTML += `
-
     <div class='position-relative' id='doitac-desktop'>
         <img src='../img//bg-green-6.png'  width='100%'/>
         <div class='container'>
+        <div class="slide-doitac">
+          <div class="item-doi-tac1">
+            <img src="./img/demo-humnan.png" alt="" width="100%"> 
+          </div>
+          <div class="item-doi-tac1">
+            <img src="./img/demo-humnan.png" alt="" width="100%">
+          </div>
+          <div class="item-doi-tac1">
+            <img src="./img/demo-humnan.png" alt="" width="100%">
+          </div>
+        </div>
         <div class='position-absolute top-0'>
       
         <div class="d-flex py-4 align-items-center">
