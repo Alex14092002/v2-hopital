@@ -141,7 +141,7 @@ img, video {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 70%;
+    width: 80%;
     min-width: 280px;
     height: 100%;
     z-index: 10;
@@ -221,7 +221,7 @@ img, video {
  }
   .menu-link {
     justify-content: space-between;
-    padding: 0.5rem 1.25rem;
+    padding: 0.5rem 0.4rem;
  }
 }
 .submenu {
@@ -1418,6 +1418,9 @@ swiper-slide img {
   .header-mobile{
     display: none;
   }
+  .header{
+    display: block;
+  }
   .title-small{
     font-size: 62px;
   }
@@ -1442,6 +1445,9 @@ swiper-slide img {
 @media(max-width : 1300px){
   .title-small{
     font-size: 44px;
+  }
+  .header{
+    display: block;
   }
   .img-itek{
     padding-top: 10%;
@@ -1499,7 +1505,10 @@ swiper-slide img {
     bottom: 20%;
   }
   .header{
-    padding: 10px 0px;
+    display: none;
+  }
+  .header-mobile{
+    display: block;
   }
   .brand img{
     width: 200px;
@@ -1643,4 +1652,56 @@ swiper-slide img {
   }
 }
 
+/* test css mobile */
+.xem-them-sub-dv,
+.xem-them-sub-lh,
+.xem-them-sub1,
+.xem-them-sub2,
+.xem-them-sub3{
+  font-size: 20px;
+  padding: 0 16px;
+  font-weight: 600;
+}
+
+.submenu-lh-mobile,
+.submenu-dv-mobile,
+.submenu-mobile {
+  display: none;
+  position: relative;
+  top: -0.5rem;
+  left: 2.5rem;
+  width: 86%;
+  max-height: 100%;
+  padding: 0px;
+  border: none;
+  outline: none;
+  opacity: 1;
+  overflow: hidden;
+  visibility: visible;
+  transform: translateY(0px);
+  box-shadow: none;
+  background: transparent;
+}
+
+.submenu-2-mobile{
+  display: none;
+  margin-top: -12px;
+    height: auto;
+    padding: 0 0 0.8rem 1rem;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(1rem);
+}
+
+.submenu-3-mobile{
+  display: none;
+  margin-top: -10px;
+    height: auto;
+    padding: 0 0 1.2rem 1.4rem;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(1rem);
+}
+
+.active-mobile{
+  display: block;
+}
 
