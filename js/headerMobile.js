@@ -19,7 +19,7 @@ headerMobile.innerHTML += `
                         </li>
                         
                         <li class="menu-item menu-dropdown">
-                            <a href='#' class="menu-link" data-toggle="submenu">Sản phẩm<i class="bx bx-chevron-down xem-them-sub1"></i></a>
+                            <a href='#' class="menu-link sub1-sanpham" data-toggle="submenu">Sản phẩm<i class="bx bx-chevron-down xem-them-sub1"></i></a>
                             <ul class="submenu-mobile">
                                 <li class="submenu-item menu-dropdown-2">
                                     <a href='../sanpham.html' class="submenu-link d-flex justify-content-between" >Thang máy chở khách <i class="bx bx-chevron-down xem-them-sub2"></i></a>
@@ -48,7 +48,7 @@ headerMobile.innerHTML += `
                         </li>
                       
                         <li class="menu-item menu-dropdown">
-                            <span class="menu-link" data-toggle="submenu">Dịch vụ<i class="bx bx-chevron-down xem-them-sub-dv"></i></span>
+                            <span class="menu-link sup1-dichvu" data-toggle="submenu">Dịch vụ<i class="bx bx-chevron-down xem-them-sub-dv"></i></span>
                             <ul class="submenu-dv-mobile">
                                 <li class="submenu-item"><a href="../dichvu.html" class="submenu-link">Thiết kế theo yêu cầu </a></li>
                                 <li class="submenu-item"><a href="../dichvu.html" class="submenu-link">Bảo trì bảo dưỡng</a></li>
@@ -62,7 +62,7 @@ headerMobile.innerHTML += `
                         <li class="menu-item"><a href="../tintuc.html" class="menu-link">Tin tức</a></li>
 
                         <li class="menu-item menu-dropdown">
-                            <span class="menu-link" data-toggle="submenu">Liên hệ<i class="bx bx-chevron-down xem-them-sub-lh"></i></span>
+                            <span class="menu-link sub1-lienhe" data-toggle="submenu">Liên hệ<i class="bx bx-chevron-down xem-them-sub-lh"></i></span>
                             <ul class="submenu-lh-mobile">
                                 <li class="submenu-item"><a href="../lienhe.html" class="submenu-link">Hỗ trợ khách hàng</a></li>
                                 <li class="submenu-item"><a href="../lienhe.html" class="submenu-link">Hệ thống phân phối</a></li>
@@ -97,7 +97,7 @@ $(document).ready(function() {
    });
 
    //cac loai menu cap 1
-   $('.xem-them-sub1').click(function(e) {
+   $('.sub1-sanpham').click(function(e) {
        e.preventDefault();
        //dong het tab old
        if($('.submenu-2-mobile').hasClass('active-mobile')){
@@ -107,13 +107,13 @@ $(document).ready(function() {
        $('.submenu-mobile').toggleClass('active-mobile');
    });
 
-   $('.xem-them-sub-dv').click(function(e) {
+   $('.sup1-dichvu').click(function(e) {
       e.preventDefault();
       //mo tab moi
       $('.submenu-dv-mobile').toggleClass('active-mobile');
   });
 
-  $('.xem-them-sub-lh').click(function(e) {
+  $('.sub1-lienhe').click(function(e) {
    e.preventDefault();
    //mo tab moi
    $('.submenu-lh-mobile').toggleClass('active-mobile');
