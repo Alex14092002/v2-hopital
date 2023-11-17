@@ -49,6 +49,9 @@ a{
   text-decoration: none !important
 }
 @import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body{
   font-family: 'Inter', sans-serif;
 }
@@ -61,7 +64,7 @@ body{
   --color-white-300: #c9cccf;
   --color-white-400: #949a9e;
   --color-white-500: #798086;
-  --color-black-100: #101419;
+  --color-black-100: #144e55;
   --color-black-200: #0c0f13;
   --color-black-300: #0c0f13;
   --color-black-400: #080a0c;
@@ -457,6 +460,7 @@ img, video {
   font-weight: 500;
 }
 
+
 .icon-search{
   margin-right: 10px;
   display: flex;
@@ -499,7 +503,7 @@ img, video {
 
 }
 .div-space{
-  height: 4px;
+  height: 3px;
   width: 100%;
   background: linear-gradient(to right, #e2cba4  , #a37d51);
 }
@@ -521,10 +525,15 @@ img, video {
 }
 .detail-adress{
   font-weight: 300;
-  color: var(#005532);
+  color: var(--color-black-100);
+}
+.title-section3{
+  font-family: 'Chonburi', serif;
+  font-size: 24px;
+  font-weight: 600;
 }
 .name-adress{
-  color: var(--color-black-100);
+  color: var(--color-black-200);
 }
 .banner-home{
   margin-top: 3%;
@@ -532,7 +541,9 @@ img, video {
 .section2{
   background: linear-gradient(to right, #2B7C76 , #358E88 , #05180E   );
 }
-
+.fs-76{
+  font-size: 76px;
+}
 .fs-60{
   font-size: 60px;
 }
@@ -541,10 +552,21 @@ img, video {
   opacity: 0.2;
 }
 .main-section2{
-  padding-top:32px;
+  position: relative;
+  height: 120px;
+}
+.title-section2{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.title2-section2{
+  height: 100%;
+  display: flex;
+  align-items: center ;
 }
 .name-opacity{
-  opacity: 0.6;
+  opacity: 0.3;
 }
 .content-section-info{
   margin: 50px 0px;
@@ -563,16 +585,41 @@ img, video {
   background: linear-gradient(to right, #22AB98  , #007976);
 }
 .section4{
-  background: url('./img/bg-section4.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  height: 720px;
+}
+.img-section4{
+  height: 1000px;
+}
+.content-section4{
+  position: absolute;
+  top: 24px;
+  left: 0;
 }
 .section5{
-  background: url('./img/bg-section5.png');
+  position: relative;
+  overflow: hidden;
+  /* background: url('./img/bg-section5.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
-  height: 700px;
+  background-position: top; */
+  height: 720px;
+}
+.more-info-secsion2{
+  padding-top: 70px;
+}
+.img-bg5{
+  padding: 0;
+  height: 1060px;
+}
+.section-5-content{
+  position: absolute;
+
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+
 }
 .title-small{
   font-size: 80px;
@@ -603,7 +650,7 @@ img, video {
           mask-composite: exclude; 
 }
 .section-dv{
-  padding-top: 6%;
+  padding-top: 2%;
 }
 .icon-phone{
   top:20%;
@@ -613,7 +660,7 @@ img, video {
   border  : #707070 1px solid ;
   border-radius: 5px;
   background: linear-gradient(to right, #219793, #05180E);
-  
+  width: 80%;
 }
 .name-tin-tuc {
   bottom: 0%;
@@ -642,12 +689,7 @@ img, video {
 .box-doi-ngu{
   position: relative;
 }
-.content-doi-ngu{
-  position: absolute;
-  top: 25%;
-  left: 4%;
-  width: 45%;
-}
+
 .lucgiac{
   position: absolute;
   top: 22%;;
@@ -699,6 +741,53 @@ img, video {
   font-size: 14px;
   margin-left: 5px;
 }
+.content-doi-ngu{
+  margin-top: 24px;
+  font-size: 11px;
+  width: 44%;
+}
+.fs-24{
+  font-size: 27px;
+}
+.content-doitac{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: url('./img/box-doi-ngu.png' );
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  height: 100%;
+}
+.img-lucgiac{
+  background: url('./img/lucgiacfull.png' );
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 86%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12%;
+}
+.img-lucgiacnho{
+  background: url('./img/lucgiacnho.png' );
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20%;
+  height: 58%;
+  position: absolute;
+  top: 31%;
+  right: 33%;
+}
+.content-doitac-box{
+  width: 100%;
+  height: 36%;
+  top: 47%;
+  transform: translateY(-50%);
+  left: 0;
+}
 .doitac{
   flex-direction: row;
   display: flex;
@@ -706,16 +795,24 @@ img, video {
   width: 100%;
   height: 100%;
 }
+.title-doitac{
+  padding-top: 50px;
+}
+.doitac6{
+  background: url('./img/bg-sec6.png' );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 490px;
+}
 .item-doi-tac{
   width: 20%;
   padding: 3rem;
 }
 
 .item-doi-tac1{
-  
-}
-.slick-dots{
-  bottom: -36px;
+  background-size: cover;
+  height: 99%;
+  width: 100%;
 }
 
 .footer{
@@ -915,14 +1012,17 @@ table tr td{
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  line-height: 0.9rem;
+  line-height: 0.8rem;
   color: #8fccbe;
   font-weight: 300;
 }
 .text-doc-them{
   font-size: 12px;
-  color: #e0e2e4;
+  color: #9ad8c9;
   font-weight: 300;
+}
+.text-doc-them:hover{
+  color: #e0e2e4;
 }
 .box-content-chitiet-sp{
   position: absolute;
@@ -1132,6 +1232,12 @@ input[type="file"] {
   margin-top: 40px;
   font-weight: 400;
 }
+.title-tintuc1{
+  padding: 40px 0;
+}
+.row-tintuc{
+  margin: 0 -18px;
+}
 .name-post  {
   padding-right: 50px;
   border-right: 1px solid #000;
@@ -1163,6 +1269,36 @@ input[type="file"] {
   display: flex;
   justify-content: center;
   
+}
+.slick-dots {
+  bottom: -8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0; /* Điều chỉnh khoảng cách giữa dots */
+}
+
+/* Tùy chỉnh kích thước và kiểu dáng của dot */
+.slick-dots li button {
+  font-size: 12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; /* Làm cho dot trở thành hình tròn */
+  background-color: rgb(11 90 77); /* Màu của dot */
+  margin: 0 5px; /* Điều chỉnh khoảng cách giữa các dot */
+  border: 0; /* Loại bỏ viền */
+  cursor: pointer;
+}
+
+/* Tùy chỉnh dot khi được chọn */
+.slick-dots li.slick-active button {
+  background-color: rgb(1 142 128); /* Màu của dot khi được chọn */
+}
+
+.slick-dots li button:before {
+  display: none !important;
 }
 .form-ung-tuyen{
   margin: 0 auto;
@@ -1246,9 +1382,9 @@ input[type="file"] {
   padding-right: 4px;
 }
 .btn-img-lienhe{
-  bottom: 10%;
+  bottom: 15%;
   cursor: pointer;
-  left: 30%;
+  left: 34%;
 }
 #doitac-mobile{
   display: none;
@@ -1284,6 +1420,7 @@ input[type="file"] {
 .bg-green-gradients{
   background: linear-gradient(to right, #2B7C76 , #358E88 , #05180E   );
 }
+
 .bg-green-500{
   background: linear-gradient(to left, #2A7E78  , #34928C , #089A95 , #007976);
 }
@@ -1376,12 +1513,24 @@ swiper-slide img {
 ::shadow .swiper {
   position: static !important;
 }
-
+.row{
+  margin: auto 0px !important;
+}
 .text-justify{
   text-align: justify;
 }
 .fs-14{
   font-size: 14px;
+}
+.img-itek-box{
+  position: absolute;
+  top: 8%;
+  right: 0;
+  height: 44%;
+  width: 50%;
+}
+.gioi-thieu-box{
+  margin-top: 20%;
 }
 .fs-16{
   font-size: 16px;
@@ -1393,18 +1542,21 @@ swiper-slide img {
   font-size: 12px;
 }
 .main-itek{
-  margin-top: 8%;
-  margin-left: 14%;
+  width: 44%;
 }
 .content-itek{
+  line-height: 0.8rem;
   font-size: 12px;
   color: var(--color-black-100);
 }
 .text-dich-vu{
   font-style: italic;
+  margin-left: 8px;
 }
+
+
 .tintuc{
-  padding: 100px 0;
+  margin-bottom: 110px;
 }
 .item-footer{
   font-size: 14px;
@@ -1418,36 +1570,46 @@ swiper-slide img {
   .header-mobile{
     display: none;
   }
+  .section-5-content{
+    top: 27%;
+    padding: 0;
+  }
   .header{
     display: block;
   }
   .title-small{
-    font-size: 62px;
+    font-family: 'Open Sans', sans-serif;
+    width: 92%;
+    font-size: 68px;
+    opacity: 0.1;
   }
   .img-itek{
-    padding-top: 2%;
+    padding-top: 5%;
   }
   .hei-lap{
     height: 410px;
   }
   .slide-doitac{
-    position: absolute;
     display: flex;
-    top: 8%;
-    right: 16%;
-    width: 280px;
-    height: 438px;
+    bottom: -13%;
+    left: 52%;
+    transform: translateX(-50%);
+    width: 56%;
+    height: 110%;
   }
-  .slide-doitac .item-doi-tac1{
-    width: 280px !important;
-  }
+
 }
 @media(max-width : 1300px){
   .title-small{
-    font-size: 44px;
+    font-size: 50px;
+    opacity: 0.3;
   }
   .header{
     display: block;
+  }
+  .section-5-content{
+    top: 22px;
+    
   }
   .img-itek{
     padding-top: 10%;
@@ -1463,9 +1625,7 @@ swiper-slide img {
     width: 218px;
     height: 342px;
   }
-  .slide-doitac .item-doi-tac1{
-    width: 220px !important;
-  }
+
 }
 @media(max-width : 768px){
   .btn-phone-green{
@@ -1481,9 +1641,7 @@ swiper-slide img {
     width: 148px;
     height: 210px;
   }
-  .slide-doitac .item-doi-tac1{
-    width: 148px !important;
-  }
+
 
   .white{
     height: 10px;
@@ -1636,7 +1794,7 @@ swiper-slide img {
   }
   .section5{
     background: url('./img/bg-section-5-mobile.png');
-    height: 1100px;
+    
   }
   .fs-60{
     font-size: 28px;

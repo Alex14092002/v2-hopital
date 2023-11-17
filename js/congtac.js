@@ -1,8 +1,8 @@
 const congtac = document.querySelector('.congtac')
 
-congtac.innerHTML +=` <div class="section-7 py-4">
-<div class="">
-   <div class="d-flex py-4 justify-content-center align-items-center container">
+congtac.innerHTML +=` 
+<div class="section-7 py-4">
+   <div class="d-flex py-4 justify-content-center align-items-center">
       <img src="./img/arrow-right.png" alt="" width="18px">
       <h3 class="fs-5 fw-bold ms-2">ĐỐI TÁC CHIẾN LƯỢC</h3>
    </div>
@@ -23,6 +23,5 @@ congtac.innerHTML +=` <div class="section-7 py-4">
          <img src="./img/doitac5.png" alt="" width="100%">
       </div>
    </div>
-</div>
 </div>`;
 
