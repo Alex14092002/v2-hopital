@@ -502,8 +502,9 @@ img, video {
   background-repeat: no-repeat;
 
 }
+
 .div-space{
-  height: 3px;
+  height: 4px;
   width: 100%;
   background: linear-gradient(to right, #e2cba4  , #a37d51);
 }
@@ -521,6 +522,7 @@ img, video {
 .title-home h3{
   font-size: 30px;
   color: #fff;
+  font-weight: 300;
   text-shadow: 1px 5px 2px rgba(0, 0, 0, 0.5);
 }
 .detail-adress{
@@ -1528,6 +1530,9 @@ swiper-slide img {
   right: 0;
   height: 44%;
   width: 50%;
+}
+.title-dichvu{
+  margin-top: 14%;
 }
 .gioi-thieu-box{
   margin-top: 20%;

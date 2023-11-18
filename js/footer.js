@@ -1,6 +1,7 @@
 const footer = document.querySelector('.footer')
 footer.innerHTML += `
-<div class="container">
+<div class="div-space"></div>
+<div class="container py-5">
 <div class="row align-items-center">
   <div class="col-12 col-md-3 pb-2 item-footer logo-footer">
       <img src="./img/logo-footer.png" alt="" width="100%">

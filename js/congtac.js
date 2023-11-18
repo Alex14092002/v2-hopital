@@ -23,5 +23,31 @@ congtac.innerHTML +=`
          <img src="./img/doitac5.png" alt="" width="100%">
       </div>
    </div>
-</div>`;
+</div>`
+
+$(document).ready(function(){
+   $('.doitac').slick({
+     slidesToShow: 5,
+     slidesToScroll: 1,
+     autoplay: true,
+     autoplaySpeed: 2000,
+     dots: false,
+     prevArrow: false,
+     nextArrow: false,
+     responsive: [
+       {
+         breakpoint: 768,
+         settings: {
+           slidesToShow: 2
+         }
+       },
+       {
+         breakpoint: 480,
+         settings: {
+           slidesToShow: 1
+         }
+       }
+     ]
+   });
+ });
 

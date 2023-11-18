@@ -912,11 +912,14 @@
       </div>
     </section>
 
-    <div id="doitac"></div>
+    <div id="doitac" class="doitac6 position-relative">
+
+    </div>
     <div class='congtac'>
     
     </div>
-    <div class="footer py-5"></div>
+    <div class="footer"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./js/congtac.js"></script>
     <script  src="./js/swiper.js"></script>
     <script
@@ -924,68 +927,11 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/headerMobile.js"></script>
     <script src="./js/footer.js"></script>
     <script src="./js/doitac.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script>
-  //slide cua doi tac
-  $(document).ready(function(){
-    $('.doitac').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      dots: true,
-      prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-      nextArrow: '<button type="button" class="slick-next">Next</button>',
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
-  });
-
-  //slide cua doi ngu ky thuat su
-  $(document).ready(function(){
-    $('.slide-doitac').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      dots: true,
-      prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-      nextArrow: '<button type="button" class="slick-next">Next</button>',
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
-  });
-</script>
-
     <script>
       // Create viewer
       viewer = pannellum.viewer("panorama", {
