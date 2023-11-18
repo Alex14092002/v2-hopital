@@ -867,23 +867,25 @@ img, video {
   font-size: 60px;
 }
 .box-chitiet{
-  
   padding: 20px;
   background: linear-gradient(to right,#2A7E78 , #34928C ,#089A95 ,#007976);
-  width: max-content;
+  width: 46%;
 }
 .main-content-chitiet{
   position: relative;
 }
+.nav-item + .nav-item{
+  margin-left: 20px;
+}
 .content-chitiet{
   width: 64%;
   position: absolute;
-  top: 30%;
-  left: 10%;
+  top: 50%;
+  left: 18%;
+  transform: translateY(-50%);
   line-height: 1.4rem;
   color: #fff;
   font-weight: 300;
-  margin: 0 50px;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
   background-color: inherit !important;
