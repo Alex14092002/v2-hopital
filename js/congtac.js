@@ -1,7 +1,7 @@
 const congtac = document.querySelector('.congtac')
 
 congtac.innerHTML +=` 
-<div class="section-7 py-4">
+<div class="section-7 py-4 container">
    <div class="d-flex py-4 justify-content-center align-items-center">
       <img src="./img/arrow-right.png" alt="" width="18px">
       <h3 class="fs-5 fw-bold ms-2">ĐỐI TÁC CHIẾN LƯỢC</h3>
