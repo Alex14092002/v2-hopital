@@ -1,4 +1,5 @@
 const doitac = document.querySelector('#doitac');
+const urlImg = './img/demo-humnan.png'
 doitac.innerHTML += `
 <div class='container position-relative'>
   
@@ -27,13 +28,13 @@ doitac.innerHTML += `
 <div class="img-lucgiac">
   <div class="slide-doitac position-absolute">
     <div class="">
-      <img src="./img/demo-humnan.png" alt="" class="item-doi-tac1"> 
+      <img src="${urlImg}" alt="" class="item-doi-tac1"> 
     </div>
     <div class="">
-      <img src="./img/demo-humnan.png" alt=""  class="item-doi-tac1">
+    <img src="${urlImg}" alt="" class="item-doi-tac1"> 
     </div>
     <div class="">
-      <img src="./img/demo-humnan.png" alt="" class="item-doi-tac1">
+    <img src="${urlImg}" alt="" class="item-doi-tac1"> 
     </div>
   </div>
 </div>
