@@ -7,7 +7,7 @@ footer.innerHTML += `
       <img src="./img/logo-footer.png" alt="" width="100%">
   </div>
   <div class="col-12 col-md-4 pb-2 item-footer">
-    <h5 class="fs-14 fw-bold black">VĂN PHÒNG BÁN HÀNG</h5>
+    <h5 class="fs-14 fw-bold black-main">VĂN PHÒNG BÁN HÀNG</h5>
     <ul class="py-3 text-light ">
       <li class="d-flex pb-2 align-items-center" >
         <div><img src="./img/icon-map-foot.png" alt="" width="15px"></div>
@@ -24,7 +24,7 @@ footer.innerHTML += `
       
      
     </ul>
-    <h5 class="fs-14 fw-bold black">HỆ THỐNG PHÂN PHỐI</h5>
+    <h5 class="fs-14 fw-bold black-main">HỆ THỐNG PHÂN PHỐI</h5>
     <ul class="py-3 text-light ">
       <li class="d-flex pb-2 align-items-center" >
         <div><img src="./img/icon-map-foot.png" alt="" width="15px"></div>
@@ -48,14 +48,14 @@ footer.innerHTML += `
     </ul>
   </div>
   <div class="col-12 col-md-5 pb-2 item-footer">
-    <h5 class="fs-14 fw-bold black">NHÀ MÁY</h5>
+    <h5 class="fs-14 fw-bold black-main">NHÀ MÁY</h5>
     <ul class="py-3 text-light ">
       <li class="d-flex pb-2 align-items-center" >
         <div><img src="./img/icon-setting-foot.png" alt="" width="30px"></div>
         <span class="ms-2 fs-10">Lô 18, KCN Quang Minh, Thị trấn Quang Minh, Mê Linh, Hà Nội</span>
       </li>
     </ul>
-    <h5 class="fs-14 fw-bold black">TRỤ SỞ CHÍNH</h5>
+    <h5 class="fs-14 fw-bold black-main">TRỤ SỞ CHÍNH</h5>
     <ul class="py-3 text-light ">
       <li class="d-flex pb-2 align-items-center" >
         <div><img src="./img/icon-setting-foot.png" alt="" width="30px"></div>

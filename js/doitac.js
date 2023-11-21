@@ -27,15 +27,12 @@ doitac.innerHTML += `
 
 <div class="img-lucgiac">
   <div class="slide-doitac position-absolute">
-    <div class="">
       <img src="${urlImg}" alt="" class="item-doi-tac1"> 
-    </div>
-    <div class="">
-    <img src="${urlImg}" alt="" class="item-doi-tac1"> 
-    </div>
-    <div class="">
-    <img src="${urlImg}" alt="" class="item-doi-tac1"> 
-    </div>
+
+      <img src="${urlImg}" alt="" class="item-doi-tac1"> 
+      
+      <img src="${urlImg}" alt="" class="item-doi-tac1"> 
+    
   </div>
 </div>
 
@@ -56,7 +53,7 @@ $(document).ready(function(){
   $('.slide-doitac').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     dots: true,
     prevArrow: false,

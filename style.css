@@ -469,7 +469,9 @@ img, video {
   border-right :#000 solid 1px;
 }
 
-
+.slick-dotted.slick-slider{
+  margin-bottom: 0;
+}
 
 
 .banner-home{
@@ -767,6 +769,7 @@ img, video {
   height: 100%;
 }
 .img-lucgiac{
+  position: relative;
   background: url('./img/lucgiacfull.png' );
   background-repeat: no-repeat;
   background-size: cover;
@@ -808,15 +811,18 @@ img, video {
   background-size: cover;
   height: 490px;
 }
+
 .item-doi-tac{
   width: 20%;
   padding: 1rem;
 }
+.text-dichvu2{
+  line-height: 1.8rem;
+  font-size: 20px;
+}
 
 .item-doi-tac1{
   background-size: cover;
-  height: 99%;
-  width: 100%;
 }
 
 .footer{
@@ -1180,11 +1186,14 @@ input[type="file"] {
 .item-bao-duong{
   width: 70%;
 }
+.mt-10{
+  margin-top: 4%;
+}
 .content-baotri p{
   text-align: justify;
 }
 .item-bao-tri{
-  background-color: #358E88;
+  background-color: rgb(32 171 174);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8); /* Box shadow */
 }
@@ -1276,13 +1285,13 @@ input[type="file"] {
   
 }
 .slick-dots {
-  bottom: -8px;
+  bottom: -6%;
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   padding: 0;
-  margin: 20px 0; /* Điều chỉnh khoảng cách giữa dots */
+
 }
 
 /* Tùy chỉnh kích thước và kiểu dáng của dot */
@@ -1342,6 +1351,10 @@ input[type="file"] {
   font-weight: bold;
   bottom: 4%;
 }
+.section-7{
+  width: 100%;
+}
+
 .fs-18{
   font-size: 18px;
 }
@@ -1395,7 +1408,7 @@ input[type="file"] {
   display: none;
 }
 .content-sp{
-  padding: 10% 7% 0% 10%;
+  padding: 8% 7% 0% 10%;
  
 }
 .content-sps{
@@ -1524,6 +1537,9 @@ swiper-slide img {
 .text-justify{
   text-align: justify;
 }
+.black-main{
+  color: #000;
+}
 .fs-14{
   font-size: 14px;
 }
@@ -1599,11 +1615,12 @@ swiper-slide img {
   }
   .slide-doitac{
     display: flex;
-    bottom: -13%;
-    left: 50%; 
+    justify-content: center;
+    bottom: 0%;
+    left: 52%; 
     transform: translateX(-50%);
     width: 56%;
-    height: 110%;
+    height: 100%;
   }
 
 }
