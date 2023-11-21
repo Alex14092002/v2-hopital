@@ -1881,8 +1881,8 @@ swiper-slide img {
   }
   .content-doi-ngu{
     width: 100%;
-    left: 0%;
     margin-top: 10px;
+    margin-left: 0px;
   }
  
   .lucgiac , .luc-giac-2{
@@ -1908,6 +1908,9 @@ swiper-slide img {
   .logo-footer{
     display: flex;
     justify-content: center;
+  }
+  .row-tintuc{
+    margin: 0 -9px;
   }
   .logo-footer img{
     width: 50%;
