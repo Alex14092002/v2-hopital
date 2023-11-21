@@ -10,7 +10,7 @@ doitac.innerHTML += `
 </div>
 
 <div class="position-absolute content-doitac-box">
-  <div class="container">
+  <div class="content-doitac">
     <div class="content-doi-ngu">
       <h2 class='py-2 text-dark fw-bold fs-24 pb-2'>ĐỘI NGŨ CHUYÊN GIA CỦA CHÚNG TÔI</h2>
       <p class="text-justify fw-300">
@@ -21,8 +21,6 @@ doitac.innerHTML += `
       </p>
     </div>
   </div>
-  <div class="content-doitac">
-  </div>
 </div>
 
 <div class="img-lucgiac">
@@ -30,7 +28,7 @@ doitac.innerHTML += `
       <img src="${urlImg}" alt="" class="item-doi-tac1"> 
 
       <img src="${urlImg}" alt="" class="item-doi-tac1"> 
-      
+
       <img src="${urlImg}" alt="" class="item-doi-tac1"> 
     
   </div>

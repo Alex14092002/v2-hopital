@@ -200,6 +200,7 @@ img, video {
 @media only screen and (min-width: 993px) {
   .menu-dropdown:hover > .submenu {
     display: block;
+    width: 230px;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -243,9 +244,12 @@ img, video {
   background-color: var(--color-white-100);
   transition: all 0.3s ease-in-out;
 }
-.submenu-item {
+.submenu-item,
+.submenu-item-2,
+.submenu-item-3 {
   display: block;
-  margin-top: 0.75rem;
+  padding-top: 0.4rem;
+  margin-top: 0.4rem;
 }
 .submenu-link {
 
@@ -422,9 +426,14 @@ img, video {
 /* Hiển thị submenu cấp 2 khi hover vào menu-dropdown-2 */
 .menu-dropdown-2:hover .submenu-2 {
   display: block;
+  width: 300px;
 }
 
-
+.submenu-item-3 + .submenu-item-3,
+.submenu-item-2 + .submenu-item-2,
+.submenu-item + .submenu-item{
+  border-top: #D4D5D7 solid 1px;
+}
 
   /* Thêm khoảng cách giữa các submenu cấp 3 */
 .menu-dropdown-3 {
@@ -438,13 +447,13 @@ img, video {
   left: 100%; /* Hiển thị bên phải của mục menu-dropdown-2 */
   background-color: #fff; /* Màu nền cho submenu cấp 2 */
   border: 1px solid #ccc;
-  width: max-content;
+  width: 220px;
   height: auto;
   padding: 1rem 1rem;
   line-height: 30px;
 
   border-radius: 0 0 0.25rem 0.25rem;
- 
+  
   box-shadow: var(--shadow-medium);
   background-color: var(--color-white-100);
   transition: all 0.3s ease-in-out;
@@ -614,7 +623,7 @@ img, video {
   height: 720px;
 }
 .more-info-secsion2{
-  padding-top: 70px;
+  padding-top: 40px;
 }
 .img-bg5{
   padding: 0;
@@ -742,7 +751,6 @@ img, video {
   font-size: 12px;
 }
 .name-business{
-  
   font-size: 22px;
 }
 .sdt-business{
@@ -751,15 +759,16 @@ img, video {
 }
 .content-doi-ngu{
   margin-top: 24px;
-  font-size: 11px;
-  width: 44%;
+    font-size: 11px;
+    width: 45%;
+    margin-left: 20%;
 }
 .fs-24{
-  font-size: 27px;
+  font-size: 25px;
 }
 .content-doitac{
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
   z-index: -1;
   background: url('./img/box-doi-ngu.png' );
@@ -769,7 +778,6 @@ img, video {
   height: 100%;
 }
 .img-lucgiac{
-  position: relative;
   background: url('./img/lucgiacfull.png' );
   background-repeat: no-repeat;
   background-size: cover;
@@ -797,14 +805,18 @@ img, video {
   transform: translateY(-50%);
   left: 0;
 }
+.title-chitet-sanpham{
+  font-size: 24px;
+}
 .doitac{
   flex-direction: row;
   display: flex;
   justify-content: center;
 }
 .title-doitac{
-  padding-top: 50px;
+  padding-top: 56px;
 }
+
 .doitac6{
   background: url('./img/bg-sec6.png' );
   background-repeat: no-repeat;
@@ -1511,9 +1523,7 @@ swiper-slide img {
 .special-lienhe{
   margin-top: 7%;
 }
-.special-nav-link{
-  padding-right: 50px;
-}
+
 .hethong-content{
   font-size: 12px;
   margin: 0 auto;
@@ -1551,7 +1561,7 @@ swiper-slide img {
   width: 50%;
 }
 .title-dichvu{
-  margin-top: 14%;
+  margin-top: 12%;
 }
 .gioi-thieu-box{
   margin-top: 20%;
@@ -1577,7 +1587,9 @@ swiper-slide img {
   font-style: italic;
   margin-left: 8px;
 }
-
+.nav-item + .nav-item {
+  margin-left: 0px;
+}
 
 .tintuc{
   margin-bottom: 110px;
@@ -1616,8 +1628,8 @@ swiper-slide img {
   .slide-doitac{
     display: flex;
     justify-content: center;
-    bottom: 0%;
-    left: 52%; 
+    bottom: 2%;
+    left: 50%; 
     transform: translateX(-50%);
     width: 56%;
     height: 100%;
@@ -1642,14 +1654,6 @@ swiper-slide img {
   .header-mobile{
     display: none;
   }
-  .slide-doitac{
-    position: absolute;
-    display: flex;
-    top: 8%;
-    right: 17%;
-    width: 218px;
-    height: 342px;
-  }
 
 }
 @media(max-width : 768px){
@@ -1661,13 +1665,68 @@ swiper-slide img {
   .slide-doitac{
     position: absolute;
     display: flex;
-    top: 8%;
-    right: 17%;
-    width: 148px;
-    height: 210px;
+    bottom: 6%;
+    right: 0;
+  }
+  .gioi-thieu-box{
+    margin-top: 6%;
+  }
+  .doitac6{
+    height: 840px;
+  }
+  .img-lucgiac{
+    width: 100%;
+    height: 46%;
+    top: 36%;
+    transform: translateX(-50%);
+    left: 50%;
+    right: 0;
+  }
+  .nav-dichvu{
+    font-size: 14px;
+  }
+  .hethong-content{
+    width: 90%;
+    text-align: justify;
+  }
+  .fs-18{
+    font-size: 14px;
+  }
+  .phone-lienhe{
+    font-size: 14px;
+  }
+  .img-itek-box {
+    position: absolute;
+    top: 56%;
+    right: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .fs-76{
+    font-size: 34px;
+  }
+  .main-section2 {
+    position: relative;
+    height: 78px;
+}
+.special-nav-link{
+  padding-right: 50px;
+  font-size: 14px;
+}
+.nav-item-chitiet{
+  width: 25%;
+  font-size: 14px;
+}
+  .img-bg5{
+    display: none;
+  }
+  .content-itek{
+    line-height: 1rem;
   }
 
-
+  .main-itek{
+    width: 100%;
+  }
   .white{
     height: 10px;
   }
@@ -1751,8 +1810,8 @@ swiper-slide img {
     padding: 12px;
   }
   .content-chitiet{
-    line-height: 25px;
-    font-size: 8px;
+    line-height: 1.2rem;
+    font-size: 12px;
   }
   .banner-home{
     margin-top: 13%;
@@ -1765,10 +1824,56 @@ swiper-slide img {
   }
   .name-thang-may{
     position: relative !important;
+    height: 68px;
+    padding: 8px;
+  }
+  .fs-24{
+    font-size: 20px;
+  }
+  .content-doitac{
+    width: 100%;
+    height: 46%;
+    padding: 12px;
+  }
+  .img-lucgiacnho{
+    top: 66%;
+    width: 50%;
+    height: 22%;
+    right: 52%;
+  }
+  .special-nav-link{
+    padding-right: 0;
+    width: 33.33%;
+  }
+  .slick-dots{
+    bottom: -10%;
+  }
+  .btn-img-lienhe{
+    bottom: 4%;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  .content-doitac-box{
+    height: 42%;
+    top:28%;
+  }
+  .box-chitiet{
+    width: 96%;
+  }
+  .section4{
+    height: 920px;
+  }
+  .text-gioi-thieu{
+    font-size: 14px;
+    text-align: center;
   }
   .title-small{
+    margin-left: 12px;
     font-size: 30px;
     text-align: center;
+  }
+  .title-chitet-sanpham{
+    font-size: 16px;
   }
   .box-doi-ngu img{
     width: 100%;
@@ -1777,6 +1882,7 @@ swiper-slide img {
   .content-doi-ngu{
     width: 100%;
     left: 0%;
+    margin-top: 10px;
   }
  
   .lucgiac , .luc-giac-2{
@@ -1813,13 +1919,17 @@ swiper-slide img {
     padding: 30px 10px ;
   }
   .title-home h2 , .title-home h3{
-    font-size: 20px;
+    font-size: 16px;
     padding: 0px 12px;
     line-height: 30px;
   }
+  .btn-khampha button{
+    font-size: 10px;
+    padding: 2px 8px;
+  }
   .section5{
     background: url('./img/bg-section-5-mobile.png');
-    
+    height: 820px;
   }
   .fs-60{
     font-size: 28px;

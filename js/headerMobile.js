@@ -100,21 +100,42 @@ $(document).ready(function() {
    $('.sub1-sanpham').click(function(e) {
        e.preventDefault();
        //dong het tab old
-       if($('.submenu-2-mobile').hasClass('active-mobile')){
-           $('.submenu-2-mobile').removeClass('active-mobile');
-       }
+        if($('.submenu-2-mobile').hasClass('active-mobile')){
+            $('.submenu-2-mobile').removeClass('active-mobile');
+        }
+        if($('.submenu-dv-mobile').hasClass('active-mobile')){
+            $('.submenu-dv-mobile').removeClass('active-mobile');
+        }
+        if($('.submenu-lh-mobile').hasClass('active-mobile')){
+            $('.submenu-lh-mobile').removeClass('active-mobile');
+        }
        //mo tab moi
        $('.submenu-mobile').toggleClass('active-mobile');
+       
    });
 
    $('.sup1-dichvu').click(function(e) {
-      e.preventDefault();
-      //mo tab moi
-      $('.submenu-dv-mobile').toggleClass('active-mobile');
+        e.preventDefault();
+        //dong het tab old
+        if($('.submenu-mobile').hasClass('active-mobile')){
+            $('.submenu-mobile').removeClass('active-mobile');
+        }
+        if($('.submenu-lh-mobile').hasClass('active-mobile')){
+            $('.submenu-lh-mobile').removeClass('active-mobile');
+        }
+        //mo tab moi
+        $('.submenu-dv-mobile').toggleClass('active-mobile');
   });
 
   $('.sub1-lienhe').click(function(e) {
    e.preventDefault();
+   //dong tab old
+    if($('.submenu-mobile').hasClass('active-mobile')){
+        $('.submenu-mobile').removeClass('active-mobile');
+    }
+    if($('.submenu-dv-mobile').hasClass('active-mobile')){
+        $('.submenu-dv-mobile').removeClass('active-mobile');
+    }
    //mo tab moi
    $('.submenu-lh-mobile').toggleClass('active-mobile');
    });
@@ -134,6 +155,8 @@ $(document).ready(function() {
        e.preventDefault();
        $('.submenu-3-mobile').toggleClass('active-mobile');
    });
+
+
 });
 
 
