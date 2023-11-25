@@ -1626,13 +1626,14 @@ swiper-slide img {
     height: 410px;
   }
   .slide-doitac{
+    overflow: hidden;
     display: flex;
     justify-content: center;
-    bottom: 2%;
+    bottom: 5%;
     left: 50%; 
     transform: translateX(-50%);
-    width: 56%;
-    height: 100%;
+    max-width: 56%;
+    height: auto;
   }
 
 }

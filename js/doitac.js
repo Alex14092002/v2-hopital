@@ -24,13 +24,19 @@ doitac.innerHTML += `
 </div>
 
 <div class="img-lucgiac">
-  <div class="slide-doitac position-absolute">
-      <img src="${urlImg}" alt="" class="item-doi-tac1"> 
-
-      <img src="${urlImg}" alt="" class="item-doi-tac1"> 
-
-      <img src="${urlImg}" alt="" class="item-doi-tac1"> 
-    
+  <div class="swiper-container slide-doitac position-absolute">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="${urlImg}" alt="" class="item-doi-tac1"> 
+        </div>
+        <div class="swiper-slide">
+          <img src="${urlImg}" alt="" class="item-doi-tac1"> 
+        </div>
+        <div class="swiper-slide">
+          <img src="${urlImg}" alt="" class="item-doi-tac1"> 
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
   </div>
 </div>
 
@@ -47,28 +53,16 @@ doitac.innerHTML += `
 </div>    
 `
 //slide cua doi ngu ky thuat su
-$(document).ready(function(){
-  $('.slide-doitac').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 3000,
-    dots: true,
-    prevArrow: false,
-    nextArrow: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
+document.addEventListener('DOMContentLoaded', function () {
+  // Khởi tạo Swiper
+  var mySwiper = new Swiper('.swiper-container', {
+    
+    slidesPerView: 1,
+    spaceBetween: 30, 
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true, 
+    },
   });
 });
