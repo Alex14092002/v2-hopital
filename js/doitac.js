@@ -36,8 +36,9 @@ doitac.innerHTML += `
           <img src="${urlImg}" alt="" class="item-doi-tac1"> 
         </div>
       </div>
-      <div class="swiper-pagination"></div>
+      
   </div>
+  <div class="swiper-pagination"></div>
 </div>
 
 <div class='position-absolute btn-img-lienhe'>

@@ -492,6 +492,27 @@ img, video {
   transform: translateX(-50%);
   left: 50%;
 }
+.swiper-container {
+  position: relative;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: -2% !important; 
+}
+
+.swiper-pagination-bullet {
+  background-color: rgb(1 142 128);
+  width: 12px; 
+  height: 12px;
+  opacity: 0.5; 
+  margin: 0 12px; 
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
 .btn-khampha button{
   display: flex;
   font-size: 14px;
@@ -1630,7 +1651,7 @@ swiper-slide img {
     display: flex;
     justify-content: center;
     bottom: 5%;
-    left: 50%; 
+    left: 52%; 
     transform: translateX(-50%);
     max-width: 56%;
     height: auto;
@@ -1666,7 +1687,7 @@ swiper-slide img {
   .slide-doitac{
     position: absolute;
     display: flex;
-    bottom: 6%;
+    bottom: 0;
     right: 0;
   }
   .gioi-thieu-box{
@@ -1930,6 +1951,10 @@ swiper-slide img {
     font-size: 10px;
     padding: 2px 8px;
   }
+  .swiper-pagination {
+    position: absolute;
+    bottom: -8% !important;
+}
   .section5{
     background: url('./img/bg-section-5-mobile.png');
     height: 850px;
