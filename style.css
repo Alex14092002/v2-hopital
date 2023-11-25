@@ -1696,7 +1696,7 @@ swiper-slide img {
   }
   .img-itek-box {
     position: absolute;
-    top: 61%;
+    top: 58%;
     right: 0;
     height: 100%;
     width: 100%;
@@ -1931,7 +1931,7 @@ swiper-slide img {
   }
   .section5{
     background: url('./img/bg-section-5-mobile.png');
-    height: 820px;
+    height: 850px;
   }
   .fs-60{
     font-size: 28px;
